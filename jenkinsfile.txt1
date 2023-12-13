@@ -1,0 +1,21 @@
+pipeline {
+         agent any
+         stages {
+                 stage('One') {
+                 steps {
+                     echo 'This my first Jenkins project...'
+                 }
+                 }
+                 stage('Two') {
+                 steps {
+                    echo('Building from scratch')
+                 }
+                 }
+                 stage('Three') {
+                
+                 steps {
+                       echo 'building Jenkinsfile'
+                 }
+                 }
+              }
+}
